@@ -62,29 +62,29 @@ public class ShowInfo : MonoBehaviour
         if (star == null) return;
         string name = star.name;
 
-        Title = GameObject.Find("StarName");
-        Title.GetComponent<TextMeshProUGUI>().text = name;
+        // Title = GameObject.Find("StarName");
+        // Title.GetComponent<TextMeshProUGUI>().text = name;
 
-        RightInfo = GameObject.Find("RightInfo");
-        RightInfo.GetComponent<TextMeshProUGUI>().text = starsInfo[name];
+        // RightInfo = GameObject.Find("RightInfo");
+        // RightInfo.GetComponent<TextMeshProUGUI>().text = starsInfo[name];
 
         GameObject root = GameObject.Find("StarContainer");
         foreach (string key in starsInfo.Keys)
         {
             string kname1 = key + "_r";
-            string kname2 = key + "_u";
+            // string kname2 = key + "_u";
             GameObject star_r = root.transform.Find(kname1).gameObject;
-            GameObject star_u = root.transform.Find(kname2).gameObject;
+            // GameObject star_u = root.transform.Find(kname2).gameObject;
 
             if (key == name)
             {
                 star_r.SetActive(true);
-                star_u.SetActive(true);
+                // star_u.SetActive(true);
             }
             else
             {
                 star_r.SetActive(false);
-                star_u.SetActive(false);
+                // star_u.SetActive(false);
             }
         }
     }
