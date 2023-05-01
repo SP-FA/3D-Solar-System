@@ -1,0 +1,4 @@
+repository "3D-Solar-System@sp-fa@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
